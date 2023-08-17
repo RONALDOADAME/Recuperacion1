@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muestra de Primitivas</title>
+    <link rel="stylesheet" href="css/Estilorocks.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#">Trabajo con DOM y EVENTOS</a>
+        </h1>
+    </header>
+    <section class="row conteiner-fluid" id="todo">
+        <aside id="lateral" class="col-sm-3">
+
+            <select id="temas"> 
+				<option value="0" selected>Seleccione...</option>
+				<option value="datos">Datos</option> 
+				<option value="if">if</option>
+                <option value="estilo">Estilo</option>
+                <option value="imagenes">imagenes</option>
+                <option value="Horoscopo">Horoscopo</option>
+                <option value="Volumen">Volumen</option>
+                <option value="Propina">Propina</option>
+                <option value="Predial">Predial</option>
+                <option value="mayor">mayor</option>
+
+
+
+            </select>
+
+
+        
+        </aside>  
+        <section id="principal" class="col-sm-9">
+        <!--Grupo de Contenedores que respondan a la funcionalidad-->
+            <!--datos-->
+            <article id="datos" class="contenedor">
+                <h3>Datos</h3>
+                <input type="text" id="palabra" placeholder="Introduce una palabra"/>
+                <input type="text" id="numero" placeholder="Introduce un Número con Decimales"/>
+                <input type="button" value="Mostrar" onClick="mostrarDatos()"/>
+            </article>
+
+            <!--condicional-->
+            <article id="if" class="contenedor">
+                <h3>if</h3>
+                <input type="text" id="n2" placeholder="Introduce un Número Entero"/><br>
+                <input type="radio" name="opcion" value="a" checked/>Par/Impar
+                <input type="radio" name="opcion" value="b" />Votar <br>
+                <a id="btnSi" onClick="si()">Identificar</a>
+            </article>
+
+            <article id="estilo" class="contenedor">
+                <h3>Modificaciones de estilo</h3>
+                <div class="uno" onmouseover="uno()">Estilo 1</div>
+                <div class="dos" onmouseover="dos()">Estilo 2</div>
+                <div class="tres" onmouseover="tres()">Estilo 3</div>
+            </article>
+
+            <article id="imagenes" class="contenedor">
+                <h3>cambio de imagenes con java script</h3>
+                <img src="img/uno.png" alt="Fondo_gris" id="foto" class="foto">
+                <img src="img/U1.png" alt=" Bruno_Mars" class="galeria" onclick="fotografia('U1')">
+                <img src="img/U2.png" alt=" Bruno_Mars" class="galeria" onclick="fotografia('U2')">
+                <img src="img/U3.png" alt=" Bruno_Mars" class="galeria" onclick="fotografia('U3')">
+                <img src="img/U4.png" alt=" Bruno_Mars" class="galeria" onclick="fotografia('U4')">
+            </article>    
+
+
+        <article id="Volumen" class="contenedor">
+            <input type="number" id="Radio" placeholder="Introduce el radio">
+            <input type="number" id="Altura" placeholder="Introduce la altura">
+            <button id="btnVolumen" onclick="calcular4()">calcular</button>
+            <p id="resultado2"></p>
+            <script src="volumen_cono.js"></script>
+        </article> 
+
+
+             
+
+            <article id="Horoscopo" class="contenedor">
+                <h3>Aqui va el Horoscopo chino</h3>
+            </article>
+
+            <article id="Volumen" class="contenedor">
+                <h3>Saca el Volumen</h3>  
+            </article>
+
+            <article id="Propina" class="contenedor" >
+                <h3>Calcula</h3>
+                <input type="text" id="cantidad" placeholder="Introduce la cantidad"/>
+                <input type="text" id="porcentaje" placeholder="selecciona el porcentaje"/>
+                <input type="button" value="calcular" onClick="calcular()"/>
+            </article>  
+            
+            <article id="mayor" class="contenedor">
+                <h3>Numero mayor</h3>
+                <input type="number" id="uno" placeholder="valor 1">
+                <input type="number" id="dos" placeholder="valor 2">
+                <input type="number" id="tres" placeholder="valor 3">
+                <button id="comprobar" onclick="comprobar()">Comprobar</button>
+            </article>
+            
+            
+            <article id="Predial" class="contenedor" >
+                <h3>Descuento predial</h3>
+
+                <select id="estado" placeholder="Estado civil">
+                    <option value="1">Soltero</option>
+                    <option value="2">Casado</option>
+                    <option value="3">Viudo</option>
+                </select>
+
+                <input type="text" id="monto" placeholder="monto"/>
+
+                <input type="button" value="calcular" onClick="calcular2()"/>
+            </article> 
+            
+            <p id="resultado" class="res">Muestra de Resultados</p>
+            <p id="resultado1" class="res">Pago total</p>
+
+
+
+
+
+    </section>
+     <script src="js/ritmo.js"></script>
+<footer>
+   <h6>Ideas Creativas -@anahitinocot</h6>  
+   <h6>Temas técnicos-@aha</h6>  
+</footer>
+</body>
+</html>
+

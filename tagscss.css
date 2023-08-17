@@ -1,0 +1,42 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html{
+	font-size:16px;
+}
+
+#todo{
+    height:800px;}
+header{
+	background-color:#11052C;
+	text-align:center;
+	color:#fff;
+ }
+	
+		
+section{
+	background-color: #F43B86;
+	font-size:1.2rem;
+	
+}
+
+.contenedor{
+		width:99%;
+		border:solid 1px #3D087B;
+		padding:40px;
+		margin:10px auto;
+		display:block; 
+        list-style-type: square;
+	}
+
+	
+    footer{
+        background-color:#11052C;
+        color: #fff;
+        padding: 20px 0px;
+        text-align: center;
+    }
+	
